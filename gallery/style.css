@@ -1,0 +1,127 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: white;
+    color: black;  
+    z-index: 15;
+    }
+    
+    .name{
+    font-size: 2rem;
+    margin:0.5rem;
+    font-weight:bold;
+    text-decoration: none;
+    /* color: #b37069; */
+    color: #4d4d4d; 
+    }
+    
+    .name:hover{
+    text-decoration: none;
+    color:#7F867B;
+    }
+    
+    .navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    }
+    
+    .navbar-links ul li{
+    list-style: none;
+    }
+    
+    .navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    margin-left: 2rem;
+    display: block;
+    font-size: 1rem;
+    }
+    
+    .navbar-links a:hover{
+      color:#7F867B;
+      
+    }
+    
+    .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    margin-top: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30px;
+    height: 21px;
+    }
+    
+    .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    }
+    
+    @media (max-width: 1000px){
+      .toggle-button{
+        display: flex;
+      }
+      
+      .navbar-links{
+        display: none;
+        width: 100%;
+      }
+      
+      .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+      }
+    
+      .navbar-links ul li{
+        text-align: center; 
+      }
+    
+      .navbar-links ul li a{
+        padding: .5rem 1rem;
+      }
+    
+      .navbar-links.active {
+        display: flex;
+      }
+    }
+
+body{
+  padding-top: 3rem;
+}
+
+.container{
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+}
+
+#photoGallery{
+  margin: 0 auto;
+}
+
+.photo{
+  background-size: cover;
+  width:  25rem;
+  height: 25rem;
+}
+
+.photoDiv{
+  display: inline-block;
+  justify-content: center;
+}

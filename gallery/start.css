@@ -1,0 +1,15 @@
+*{
+    background-color: white;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
+  html{
+  scroll-behavior: smooth;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
